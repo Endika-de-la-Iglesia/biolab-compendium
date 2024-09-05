@@ -1,0 +1,17 @@
+$color-lightest: #f9f3fe;
+$color-light: #cf9bf6;
+$color-medium: #b25ef3;
+$color-dark: #9a26f3;
+$color-darkest: #8902f1;
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

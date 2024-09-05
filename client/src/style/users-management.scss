@@ -1,0 +1,28 @@
+.users-management-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .users-list-wrapper {
+    width: 80%;
+
+    .user-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 10px;
+      font-size: 0.8em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: solid 3px $color-darkest;
+      border-radius: 10px;
+
+      select {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

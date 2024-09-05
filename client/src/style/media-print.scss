@@ -1,0 +1,51 @@
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    zoom: 75%;
+  }
+
+  .btn,
+  .navbar-wrapper,
+  .youtube-video-wrapper,
+  .protocol-featured-image,
+  .download-wrapper {
+    display: none !important;
+  }
+
+  .reaction-table-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .reaction-table {
+      display: flex;
+      flex-direction: column;
+
+      .grid-header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr;
+        gap: 10px;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .grid-row {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        column-gap: 10px;
+        align-items: center;
+        margin-top: 15px;
+
+        select {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+}

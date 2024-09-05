@@ -1,0 +1,12 @@
+.email-sent-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+}
+.email-sent-page p {
+  width: 75%;
+  text-align: center;
+}/*# sourceMappingURL=email-sent.css.map */

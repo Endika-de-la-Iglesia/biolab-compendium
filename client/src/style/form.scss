@@ -1,0 +1,136 @@
+.text-area-wrapper {
+  width: 100%;
+}
+
+textarea {
+  border: 1px solid $color-medium;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  height: 100px;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 21px;
+}
+
+.btn {
+  cursor: pointer;
+  min-height: 42px;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  background-color: $color-lightest;
+  color: $color-darkest;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $color-medium;
+    color: $color-lightest;
+  }
+}
+
+.btn-active {
+  cursor: pointer;
+  min-height: 42px;
+  width: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  background-color: $color-lightest;
+  color: $color-darkest;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: $color-medium;
+  color: $color-lightest;
+}
+
+input {
+  border: 1px solid $color-lightest;
+  border-radius: 18px;
+  background-color: $color-lightest;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  color: $color-darkest;
+  height: 65px;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 21px;
+  margin-top: 40px;
+
+  transition: 0.5s ease-in-out;
+
+  &:focus {
+    border-color: $color-medium;
+    box-shadow: 0 0 8px $color-medium;
+  }
+}
+
+select {
+  border: 1px solid $color-light;
+  background-color: $color-lightest;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  width: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  border-radius: 3px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-dropzone {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  border: 2px dashed #007bff;
+  padding: 20px;
+  width: 100%;
+  height: 260px;
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .preview-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    img {
+      height: 130px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .btn {
+      margin: 0px;
+    }
+  }
+}
+
+.quill-text-editor-container {
+  border: solid 1px $color-darkest;
+}

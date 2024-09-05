@@ -1,0 +1,136 @@
+.protocol-title-wrapper {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+
+  .protocol-activity-icons-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.protocol-featured-image {
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+  }
+}
+
+.download-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+
+  .download-icon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.activity-icon {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.protocol-info {
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+.reaction-table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .reaction-table {
+    display: flex;
+    flex-direction: column;
+
+    .grid-header {
+      display: grid;
+      grid-template-columns: 1fr 2fr 2fr 2fr;
+      gap: 10px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .grid-row {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      column-gap: 10px;
+      align-items: center;
+      margin-top: 15px;
+    }
+
+    .grid-row-btns {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-top: 20px;
+    }
+  }
+
+  select,
+  input {
+    margin: 0px;
+  }
+}
+
+.youtube-video-embeded-video {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.small-note {
+  font-size: 0.6em;
+  margin-bottom: 10px;
+}
+
+.protocol-info-text.ql-editor img {
+  display: block;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .protocol-title-wrapper {
+    grid-template-columns: 1fr;
+
+    .admin-icons {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .download-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .reaction-table-container {
+    .reaction-table {
+      .grid-header {
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+      }
+
+      .grid-row {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+      }
+    }
+  }
+}

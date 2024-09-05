@@ -1,0 +1,31 @@
+.account-management-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.account-management-container .account-management-wrapper {
+  width: 80%;
+}
+.account-management-container .account-management-wrapper input {
+  margin-top: 10px;
+}
+.account-management-container .account-management-wrapper select {
+  margin-top: 0px;
+}
+.account-management-container .account-management-wrapper .warning-msg {
+  font-size: 0.5em;
+  margin-bottom: 20px;
+}
+.account-management-container .account-management-wrapper .btn {
+  margin-right: 35px;
+  margin-bottom: 15px;
+}
+.account-management-container .password-wrapper input {
+  margin-top: 10px;
+}
+.account-management-container .email-field-wrapper {
+  margin-top: 20px;
+}
+.account-management-container .email-field-wrapper .btn {
+  margin-left: 20px;
+}/*# sourceMappingURL=account-management.css.map */
