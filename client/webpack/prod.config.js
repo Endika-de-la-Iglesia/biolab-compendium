@@ -20,7 +20,7 @@ module.exports = merge(webpackCommon, {
     filename: "[name]-[fullhash].min.js",
     sourceMapFilename: "[file].map",
     chunkFilename: "[id]-[fullhash].js",
-    publicPath: "/",
+    publicPath: "/biolab-compendium/",
   },
 
   optimization: {

@@ -8,13 +8,13 @@ const dev = {
   },
 };
 
-// const prod = {
-//   apiUrl: "https://api.myproductiondomain.com",
-//   devServer: {
-//     host: "myproductiondomain.com",
-//     port: 80,
-//   },
-// };
+const prod = {
+  apiUrl: "https://api.myproductiondomain.com",
+  devServer: {
+    host: "myproductiondomain.com",
+    port: 80,
+  },
+};
 
 const test = {
   apiUrl: "http://localhost:8081",
