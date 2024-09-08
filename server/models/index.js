@@ -10,7 +10,10 @@ const sequelize = new Sequelize(
   sequelizeConfig.password,
   {
     host: sequelizeConfig.host,
+    port: sequelizeConfig.port,
     dialect: sequelizeConfig.dialect,
+    dialectOptions: sequelizeConfig.dialectOptions,
+    logging: (msg) => console.log("SQL Log:", msg),
   }
 );
 

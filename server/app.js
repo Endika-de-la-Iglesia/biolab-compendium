@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
-sequelize.sync().then(() => {
+sequelize.sync({ alter: true }).then(() => {
   console.log("Comunicación de base de datos y tablas establecida");
 });
 
