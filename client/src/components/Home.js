@@ -9,10 +9,14 @@ import TravelToTop from "./navigation/TravelToTop";
 
 function Home() {
   const featuredCategories = {
-    "Biomoléculas-DNA": "/assets/images/adn.jpg",
-    "Biomoléculas-Proteínas": "/assets/images/proteína.jpg",
-    Microbiología: "/assets/images/microbiología.jpg",
-    "Cultivos celulares": "/assets/images/célula_eucariota.jpg",
+    "Biomoléculas-DNA":
+      "https://res.cloudinary.com/djvd0bsml/image/upload/v1725813019/adn_luh3bi.jpg",
+    "Biomoléculas-Proteínas":
+      "https://res.cloudinary.com/djvd0bsml/image/upload/v1725813021/prote%C3%ADna_bdk6uu.jpg",
+    Microbiología:
+      "https://res.cloudinary.com/djvd0bsml/image/upload/v1725813020/microbiolog%C3%ADa_g1tgcq.jpg",
+    "Cultivos celulares":
+      "https://res.cloudinary.com/djvd0bsml/image/upload/v1725813019/c%C3%A9lula_eucariota_vtcfhh.jpg",
   };
 
   const navigate = useNavigate();
@@ -58,7 +62,7 @@ function Home() {
       <div
         className="home-info-wrapper"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/home-background.jpg")`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/djvd0bsml/image/upload/v1725813020/home-background_o3iqea.jpg")`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

@@ -25,7 +25,10 @@ export default function NavBar() {
     <div className="navbar-wrapper">
       <div className="logo">
         <Link to="/">
-          <img src="/assets/images/logo.png" alt="logo" />
+          <img
+            src="https://res.cloudinary.com/djvd0bsml/image/upload/v1725813020/logo_xkpbnc.png"
+            alt="logo"
+          />
         </Link>
       </div>
 
