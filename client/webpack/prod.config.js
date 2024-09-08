@@ -39,6 +39,18 @@ module.exports = merge(webpackCommon, {
           "sass-loader",
         ],
       },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "../dist/assets/images",
+              name: "[name].[hash].[ext]",
+            },
+          },
+        ],
+      },
     ],
   },
 

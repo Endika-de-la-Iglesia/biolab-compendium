@@ -64,7 +64,8 @@
     "sanitize-html": "^2.13.0",
     "sass": "^1.77.8",
     "sass-loader": "^16.0.0",
-    "striptags": "^3.2.0"
+    "striptags": "^3.2.0",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",

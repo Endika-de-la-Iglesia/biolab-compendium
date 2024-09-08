@@ -10,7 +10,7 @@ import TravelToTop from "./navigation/TravelToTop";
 function Home() {
   const featuredCategories = {
     "Biomoléculas-DNA": "/assets/images/adn.jpg",
-    "Biomoléculas-Proteínas": "/assets//images/proteína.jpg",
+    "Biomoléculas-Proteínas": "/assets/images/proteína.jpg",
     Microbiología: "/assets/images/microbiología.jpg",
     "Cultivos celulares": "/assets/images/célula_eucariota.jpg",
   };

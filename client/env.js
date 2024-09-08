@@ -1,5 +1,4 @@
-require("dotenv").config();
-const ENV = process.env.NODE_ENV || "development"; 
+const ENV = process.env.NODE_ENV; 
 
 const dev = {
   apiUrl: "http://localhost:8080",
@@ -10,10 +9,10 @@ const dev = {
 };
 
 const prod = {
-  apiUrl: process.env.RAILWAY_STATIC_URL,
+  apiUrl: "https://biolab-compendium-server-production.up.railway.app",
   devServer: {
-    host: process.env.HOST,
-    port: process.env.PORT,
+    host: "biolab-compendium-server-production.up.railway.app",
+    port: 8080,
   },
 };
 
