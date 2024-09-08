@@ -1,3 +1,4 @@
+require("dotenv").config();
 const ENV = process.env.NODE_ENV || "development"; 
 
 const dev = {
@@ -9,10 +10,10 @@ const dev = {
 };
 
 const prod = {
-  apiUrl: "https://api.myproductiondomain.com",
+  apiUrl: process.env.RAILWAY_STATIC_URL,
   devServer: {
-    host: "myproductiondomain.com",
-    port: 80,
+    host: process.env.HOST,
+    port: process.env.PORT,
   },
 };
 

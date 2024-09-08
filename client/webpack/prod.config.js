@@ -66,8 +66,12 @@ module.exports = merge(webpackCommon, {
           from: path.resolve(__dirname, "../static"),
           to: path.resolve(__dirname, "../dist"),
           globOptions: {
-            ignore: ["**/index.html", "**/favicon.ico"], // Correct way to ignore files
+            ignore: ["**/index.html", "**/favicon.ico"],
           },
+        },
+        {
+          from: path.resolve(__dirname, "../_redirects"),
+          to: path.resolve(__dirname, "../dist"),
         },
       ],
     }),
