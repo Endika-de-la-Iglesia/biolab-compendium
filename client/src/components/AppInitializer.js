@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import axios from "axios";
 
 import "../style/main.scss";
@@ -185,7 +185,7 @@ const AppInitializer = () => {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         {combinedLoadingState ? (
           <Route key="loading" path="*" element={<Loading />} />
@@ -193,7 +193,7 @@ const AppInitializer = () => {
           routesGuard(role, isAuthenticated, combinedLoadingState)
         )}
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
