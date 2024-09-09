@@ -152,7 +152,7 @@ const verifyEmail = async (req, res) => {
     user.verified = true;
     await user.save();
 
-    res.redirect(`http://localhost:3000/login`);
+    res.redirect(process.env.FRONT_END_URL);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
